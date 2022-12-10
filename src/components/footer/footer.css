@@ -1,0 +1,36 @@
+.footer{
+    border-top: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cool-link{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+}
+.cool-link a{
+    color: black;
+    text-decoration: none;
+}
+.cool-link a:hover{
+    color: #5b38e3;
+    
+}
+.rights{
+    font-family: "inter";
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:400px){
+    .cool-link{
+        margin: 7px;
+    }
+}

@@ -1,0 +1,50 @@
+.about{
+    margin-top: 50px;
+    background: #202020;
+}
+.about-heading{
+    color: #ffffff !important;
+    font-size: 32px !important;
+    margin: 30px;
+}
+.about-description{
+    color: #ffffff !important;
+    font-family: "inter";
+    font-size: 12px;
+    margin-bottom: 30px;
+}
+.color-design{
+    font-family: "Darker Gresque";
+    color: #f7d046;
+    font-weight: 700;
+    font-size: 34px;
+}
+.exp-list p{
+    color: #ffffff;
+    font-family: "inter";
+    font-size: 11px;
+    margin-top: 3px;
+}
+.social{
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+.social p{
+    margin-bottom: 0px;
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.icon{
+    list-style: none;
+    margin-top: 20px;
+    margin-inline: 30px;
+}
+.icon-height{
+    color: #ffffff;
+    height: 25px;
+}

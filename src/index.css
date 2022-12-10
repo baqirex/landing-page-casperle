@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700;900&family=Inter&family=Raleway:ital,wght@0,100;0,500;1,100&display=swap');
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +12,22 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.heading{
+  color: #5b38e3;
+  font-family: "Darker Grotesque";
+  font-size: 50px;
+  margin-top: 80px;
+}
+.description{
+  font-family: "inter";
+  font-size: 14px;
+}
+
+@media(max-width:600px){
+  .heading{
+    font-size: 38px;
+    margin-top: 30px;
+  }
 }

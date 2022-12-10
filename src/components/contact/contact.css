@@ -1,0 +1,26 @@
+.input-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.input-field{
+    width: 400px;
+    height: 45px;
+    border: #5b38e3 solid 2px;
+    outline: none;
+}
+.input-field:focus{
+    border: #320390 solid 2px ;
+    border-radius: 0px ;
+}
+.gt{
+  margin-left: 0px;
+  height: 45px;
+  border-radius: 0px !important;
+}
+@media(max-width:600px){
+    .input-field{
+        width: 250px;
+    }
+}

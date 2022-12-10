@@ -1,0 +1,102 @@
+/* Navbar style */
+.nav-link{
+    margin: 5px;
+  }
+  .active{
+    background-color: #5b38e3;
+    color:#ffffff !important;
+    box-shadow: 5px 10px 30px rgba(2, 23, 255, 0.336);
+  }
+  
+  .navstyle{
+    padding: 8px 20px !important;
+    border-radius: 8px;
+  }
+  
+  .navstyle:hover{
+    background-color: #5b38e3;
+    color:#ffffff !important;
+    box-shadow: 5px 10px 30px rgba(2, 23, 255, 0.336);
+    transition: all ease 0.2s;
+  }
+  
+  
+  .navbar{
+    position: relative;
+    top: 20px;
+    border-radius: 50px 50px 50px 50px ;
+  }
+
+  .navbar-brand{
+    color: #5b38e3 !important;
+  }
+  
+  .navbar-toggler{
+    width: 30px;
+    height: 30px;
+    position: relative;
+    transition: .5s ease-in-out;
+  }
+  
+  .navbar-toggler,
+  .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus{
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+  }
+  .navbar-toggler span{
+    margin: 0;
+    padding: 0;
+  }
+  .toggler-icon {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: #6A1DFF ;
+    border-radius: 1px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+  }
+  .middle-bar{
+    margin-top: 0px;
+  }
+  
+  /* When toggler is clicked */
+  
+  .navbar-toggler .top-bar{
+    margin-top: 0x;
+    transform: rotate(135deg);
+  }
+  .navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+  .navbar-toggler .bottom-bar{
+    margin-top: 0x;
+    transform: rotate(-135deg);
+  }
+  
+  /* when navbar is collapsed */
+  .navbar-toggler.collapsed .top-bar{
+    margin-top: -20px;
+    transform: rotate(0deg);
+  }
+  .navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+  }
+  .navbar-toggler.collapsed .bottom-bar{
+    margin-top: 20px;
+    transform: rotate(0deg);
+  }
+  
+  /* color of toggler  */
+  
+  .navbar-toggler.collapsed .toggler-icon{
+    background:linear-gradient( 263deg , rgba(106, 29, 255, 1) 0% ,rgba(255, 80, 80, 1) 100% );
+  }

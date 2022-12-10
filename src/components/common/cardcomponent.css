@@ -1,0 +1,20 @@
+.card{
+    margin: 40px;
+    transition: 0.4s ease-in-out;
+}
+.card:hover{
+    box-shadow: 5px 10px 40px rgba(2, 23, 255, 0.336);
+    transition: 0.4s ease-in-out;
+}
+.card-img{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.card-title{
+    color: #5b38e3;
+    font-size: 22px;
+}
+.card-text{
+    font-family: "inter";
+    font-size: 13px;
+}
