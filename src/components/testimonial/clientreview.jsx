@@ -1,15 +1,20 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
+import "./clientreview.css";
 
-function ClientReview({ name, image, description }) {
+function ClientReview({ name, image, comment }) {
   return (
-    <div className="review d-flex m-5">
-      <img src={image} height="400" width="400" />
-      <div className="review-data">
-        <p className="t-description description">{description}</p>
-        <p className="client-name">- {name}</p>
-      </div>
-    </div>
+    <Container className="client-review">
+      <Row>
+        <Col sm lg="6">
+          <img className="client-img img-fluid" src={image} />
+        </Col>
+        <Col sm lg="6">
+          <p className="t-description description">{comment}</p>
+          <p className="client-name">- {name}</p>
+        </Col>
+      </Row>
+    </Container>
   );
 }
 

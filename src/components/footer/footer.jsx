@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import { Container } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -9,16 +10,22 @@ function Footer() {
         <div className="footer-items">
           <ul>
             <li className="cool-link">
-              <a to="#home">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li className="cool-link">
-              <a to="#about">About Me</a>
+              <Link to="/about">About Me</Link>
             </li>
             <li className="cool-link">
-              <a to="#services">Services</a>
+              <Link to="/services">Services</Link>
             </li>
             <li className="cool-link">
-              <a to="#testimonial">Testimonial</a>
+              <Link to="/testimonial">Testimonial</Link>
+            </li>
+            <li className="cool-link">
+              <Link to="/blog">Blog</Link>
+            </li>
+            <li className="cool-link">
+              <Link to="/gallery">Gallery</Link>
             </li>
           </ul>
         </div>

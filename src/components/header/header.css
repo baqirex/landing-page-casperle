@@ -12,36 +12,16 @@
 .myname{
     color: #5b38e3;
 }
-.mybtn{
-    background-color: #5b38e3 !important;
-    transition: 0.3s ease-in-out;
-    border: none !important;
-}
-.mybtn:hover{
-    background-color: #320390 !important;
-    transition: 0.3s ease-in-out;
-}
 
-@media(max-width:600px){
+
+@media(max-width:780px){
     .header{
         margin-top: 0px;
     }
     .header-image{
         margin-top: 50px;
-        width: 380px;
-        height: 270px;
     }
     .profile-heading{
         font-size: 54px;
-    }
-}
-@media(max-width:400px){
-    .header{
-        margin-top: 0px;
-    }
-    .header-image{
-        margin-top: 50px;
-        width: 300px;
-        height: 200px;
     }
 }

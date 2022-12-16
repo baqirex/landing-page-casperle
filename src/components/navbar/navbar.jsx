@@ -1,17 +1,31 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 import "./navbar.css";
 
-const Navbar = () => {
+const Navbar = ({ navitems }) => {
+  const [navClasses, setNavClasses] = useState({
+    nav: "navbar fixed-top bg-white navbar-expand-lg",
+    navbrand: "navbar-brand ms-2",
+    navToggler:
+      "navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around",
+    topbar: "toggler-icon top-bar",
+    middlebar: "toggler-icon middle-bar",
+    bottombar: "toggler-icon bottom-bar",
+    navcollapse: "collapse navbar-collapse",
+    navul: "navbar-nav ms-auto text-center mx-auto mb-2 mb-lg-0",
+    navitem: "nav-item m-2",
+    navlink: "nav-link navstyle",
+  });
+
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className={navClasses.nav}>
       <div className="container-fluid">
-        <a className="navbar-brand ms-2" href="#">
+        <a className={navClasses.navbrand} href="#">
           Casperle
         </a>
         <button
-          className="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around"
+          className={navClasses.navToggler}
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -19,32 +33,19 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="toggler-icon top-bar"></span>
-          <span className="toggler-icon middle-bar"></span>
-          <span className="toggler-icon bottom-bar"></span>
+          <span className={navClasses.topbar}></span>
+          <span className={navClasses.middlebar}></span>
+          <span className={navClasses.bottombar}></span>
         </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto text-center mx-auto mb-2 mb-lg-0">
-            <li className="nav-item m-2">
-              <NavLink className="nav-link navstyle" to="/" smooth>
-                Home
-              </NavLink>
-            </li>
-            <li className="nav-item m-2">
-              <NavLink className="nav-link navstyle" to="/about" smooth>
-                About me
-              </NavLink>
-            </li>
-            <li className="nav-item m-2">
-              <NavLink className="nav-link navstyle" to="/services" smooth>
-                Services
-              </NavLink>
-            </li>
-            <li className="nav-item m-2">
-              <NavLink className="nav-link navstyle" to="/testimonial" smooth>
-                Testimonial
-              </NavLink>
-            </li>
+        <div className={navClasses.navcollapse} id="navbarSupportedContent">
+          <ul className={navClasses.navul}>
+            {navitems.map((item) => (
+              <li className={navClasses.navitem} key={item.path}>
+                <NavLink className={navClasses.navlink} to={item.path}>
+                  {item.title}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </div>
       </div>

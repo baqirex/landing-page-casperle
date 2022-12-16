@@ -9,29 +9,22 @@ import {
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
-function About() {
+function About({ heading, description, exp, clt }) {
   return (
-    <Container fluid className="about" id="about">
+    <Container fluid className="about m-top">
       <Row className="justify-content-center">
         <Col lg="6">
-          <h1 className="about-heading text-center">About Me</h1>
-          <p className="about-description text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            blanditiis magni cum ullam dicta ab? Dolorem atque mollitia ducimus,
-            ea incidunt dolores nisi beatae explicabo accusamus qui dicta vitae
-            tempore temporibus quo illum libero. Sed. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Totam exercitationem velit fuga quidem
-            deserunt iusto tenetur quis ab facere. Tempore.
-          </p>
+          <h1 className="about-heading text-center">{heading}</h1>
+          <p className="about-description text-center">{description}</p>
           <div className="d-flex justify-content-center exp">
             <div className="exp-list d-flex m-4">
-              <h4 className="color-design mx-2">8</h4>
+              <h4 className="color-design mx-2">{exp}</h4>
               <p>
                 Years of <br /> experience
               </p>
             </div>
             <div className="exp-list d-flex m-4">
-              <h4 className="color-design mx-2">100+</h4>
+              <h4 className="color-design mx-2">{clt}</h4>
               <p>
                 Clients <br /> Served
               </p>

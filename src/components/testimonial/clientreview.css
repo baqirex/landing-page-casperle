@@ -1,0 +1,21 @@
+.client-review{
+    margin-bottom: 50px;
+}
+
+.t-description{
+    margin-top: 80px; 
+}
+.client-name{
+    color: #5b38e3;
+    font-family: "Darker Grotesque" ;
+    font-size: 22px;
+}
+
+@media(max-width:995px){
+    .t-description{
+        margin-top: 0px;
+    }
+    .client-img{
+        margin-bottom: 20px;
+    }
+}
